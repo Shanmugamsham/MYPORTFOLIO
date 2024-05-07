@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 const Compoenthome = () => {
+  const [img,setimage]=useState("https://res.cloudinary.com/ddjjx7t57/image/upload/v1715051885/Sham_Resume_shvige.png")
+
+  function dowloading() {
+    fetch(img).then((res)=>res.blob()).then((blobs)=>{
+
+      const link =document.createElement("a")
+      link.href=URL.createObjectURL(blobs)
+      link.download="shamresume.png"
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    })
+  }
+
+
     return (
         <div className='homebg container-fluid'>
             <div className='row'>
@@ -44,7 +59,7 @@ const Compoenthome = () => {
   <h1>Shanmugasundaram</h1>
   <h3>Full stack Developer</h3>
   <div className='buttondiv'>
-  <button className='demobtns'> Download CV</button>
+  <button className='demobtns' onClick={dowloading}> Download CV</button>
   <button className='demobtns'> <Link to={"/contect"} className='demobtnslink' >Contect Info</Link></button>
   </div>
   <div className='linkdiv'>
