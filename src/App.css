@@ -360,3 +360,32 @@ padding-top:25px;
     color:red;
     padding-top:0px;
 }
+
+.homebg5{
+    background-color:#13131a;
+    background-size:cover;
+    width:100%;
+    text-align:center;
+    
+}
+.imagesizeforcertgicate{
+    width:780px;
+    height:480px;
+    
+}
+.boxcertificate{
+    height:500px;
+    width:500px;
+    text-align:center;
+}
+.fullstack{
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    color: white;
+    text-align:center;
+    margin-top:120px;
+    margin-bottom:50px;
+}
+.centerbox{
+    text-align:center;
+}

@@ -20,7 +20,9 @@ const Componentabout = () => {
         <li className="nav-item  m-2">
         <Link className="nav-link"to={"/project"}> <span className='spanelement'>|</span> Project<span className='spanelement'>|</span></Link>
         </li>
-        
+        <li className="nav-item  m-2">
+        <Link className="nav-link"to={"/certificate"}> <span className='spanelement'>|</span> Certificates<span className='spanelement'>|</span></Link>
+        </li>
         <li className="nav-item  m-2">
         <Link className="nav-link"to={"/about"}><span className='spanelement'>|</span>About<span className='spanelement'>|</span></Link>
         </li>
