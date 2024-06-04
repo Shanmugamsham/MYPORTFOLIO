@@ -17,9 +17,9 @@ const Compoenthome = () => {
 
 
     return (
-        <div className='container-fluid'>
-            
-             <nav className="navbar navbar-expand-lg navbar-dark navbarstyle">
+        <div className='homebg'>
+
+  <nav className="navbar navbar-expand-lg navbar-dark navbarstyle">
   <div className="container-fluid">
     <a className="navbar-brand" id='namebar' > <span className='spanelement'>|</span>Shanmugasundaram<span className='spanelement'>|</span></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@ const Compoenthome = () => {
   </div>
 </nav> 
 
-<div className='homebg'>
+<div className='container'>
 <div className='row'>
 <div className='col-12 col-lg-6'>
     <div className='imagesize1'>
