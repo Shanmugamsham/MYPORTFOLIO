@@ -5,9 +5,8 @@ const Componentcontect = () => {
     
 
     return (
-        <div className='homebg4 container-fluid'>
-        <div className='row'>
-            <div className='col-12'>
+       
+            <div className='homebg4'>
          <nav className="navbar navbar-expand-lg navbar-dark navbarstyle  fixed-top">
 <div className="container-fluid">
 <a className="navbar-brand" id='namebar' > <span className='spanelement'>|</span>Shanmugasundaram<span className='spanelement'>|</span></a>
@@ -38,9 +37,10 @@ const Componentcontect = () => {
 </div>
 </nav> 
 
-</div>
 
 
+<div className=' container'>
+<div className='row'>
 <div className='col-12 card3'>
 <h5 className='aboutmesubheading1'>Get in Touch</h5>
 <h1 className='aboutmeheading1'>Contact Me</h1>
@@ -49,7 +49,7 @@ const Componentcontect = () => {
 <a href='https://abdeshanmugam@gmail.com'  target='_blank' className=' sizefont2'><i class="fa-regular fa-envelope"></i></a>
 <a href='https://www.instagram.com/mr.shan_3?igsh=ajMxenE1eHZoNGI1'  target='_blank' className=' sizefont2'><i class="fa-brands fa-instagram"></i></a>
 </div>
-
+</div>
 </div>
     </div>
     );

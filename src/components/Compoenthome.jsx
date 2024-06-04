@@ -17,9 +17,8 @@ const Compoenthome = () => {
 
 
     return (
-        <div className='homebg container-fluid'>
-            <div className='row'>
-                <div className='col-12'>
+        <div className='container-fluid'>
+            
              <nav className="navbar navbar-expand-lg navbar-dark navbarstyle">
   <div className="container-fluid">
     <a className="navbar-brand" id='namebar' > <span className='spanelement'>|</span>Shanmugasundaram<span className='spanelement'>|</span></a>
@@ -50,7 +49,9 @@ const Compoenthome = () => {
     </div>
   </div>
 </nav> 
-</div>
+
+<div className='homebg'>
+<div className='row'>
 <div className='col-12 col-lg-6'>
     <div className='imagesize1'>
 
@@ -70,7 +71,9 @@ const Compoenthome = () => {
   <a href='https://github.com/Shanmugamsham'  target='_blank' className=' sizefont'><i className="fa-brands fa-github "></i></a>
   
   
-  
+    
+  </div>
+
   </div>
 
 </div>
