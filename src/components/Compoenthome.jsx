@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Componentprojects from './Componentprojects';
+import Componentprojects2 from '../components2/Componentprojects2';
+import Componentcertification2 from '../components2/Componentcertification2';
+import Componentabout2 from '../components2/Componentabout2';
+import Componentcontect2 from '../components2/Componentcontect2';
 const Compoenthome = () => {
   const [img,setimage]=useState("https://res.cloudinary.com/ddjjx7t57/image/upload/v1715051885/Sham_Resume_shvige.png")
 
@@ -19,7 +24,7 @@ const Compoenthome = () => {
     return (
         <div className='homebg'>
 
-  <nav className="navbar navbar-expand-lg navbar-dark navbarstyle">
+  <nav className="navbar navbar-expand-lg navbar-dark navbarstyle fixed-top">
   <div className="container-fluid">
     <a className="navbar-brand" id='namebar' > <span className='spanelement'>|</span>Shanmugasundaram<span className='spanelement'>|</span></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +47,7 @@ const Compoenthome = () => {
         <Link className="nav-link"to={"/about"}><span className='spanelement'>|</span>About<span className='spanelement'>|</span></Link>
         </li>
         <li className="nav-item  m-2">
-        <Link className="nav-link" to={"/contect"}><span className='spanelement'>|</span>Contect<span className='spanelement'>|</span></Link>
+        <Link className="nav-link" to={"/contect"}><span className='spanelement'>|</span>Contact<span className='spanelement'>|</span></Link>
         </li>
       </ul>
       </div>
@@ -80,6 +85,10 @@ const Compoenthome = () => {
 
 
 </div>
+<Componentprojects2/>
+<Componentcertification2/>
+<Componentabout2/>
+<Componentcontect2/>
         </div>
     );
 };
