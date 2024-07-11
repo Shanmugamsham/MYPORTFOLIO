@@ -65,8 +65,8 @@ const Compoenthome = () => {
 </div>
 <div className=' infodvi col-lg-6'>
   <h5>Hello,I'm</h5>
-  <h1>Shanmugasundaram</h1>
-  <h3>Full stack Developer</h3>
+  <h1>SHANMUGA SUNDARAM</h1>
+  <h3>MERN STACK DEVELOPER</h3>
   <div className='buttondiv'>
   <button className='demobtns' onClick={dowloading}> Download CV</button>
   <button className='demobtns'> <Link to={"/contect"} className='demobtnslink' >Contect Info</Link></button>

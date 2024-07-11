@@ -6,10 +6,7 @@ const Componentcontect2 = () => {
 
     return (
        
-            <div className='homebg4'>
-         
-
-
+<div className='homebg4'>   
 <div className=' container'>
 <div className='row'>
 <div className='col-12 card3'>
@@ -22,6 +19,7 @@ const Componentcontect2 = () => {
 </div>
 </div>
 </div>
+
     </div>
     );
 };
