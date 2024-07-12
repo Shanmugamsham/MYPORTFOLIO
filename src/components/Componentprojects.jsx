@@ -29,7 +29,7 @@ const Componentprojects = () => {
     <Link className="nav-link"to={"/about"}><span className='spanelement'>|</span>About<span className='spanelement'>|</span></Link>
     </li>
     <li className="nav-item  m-2">
-    <Link className="nav-link" to={"/contect"}><span className='spanelement'>|</span>Contect<span className='spanelement'>|</span></Link>
+    <Link className="nav-link" to={"/contect"}><span className='spanelement'>|</span>Contact<span className='spanelement'>|</span></Link>
     </li>
   </ul>
   </div>
