@@ -5,10 +5,12 @@ import Componentprojects from './Componentprojects';
 import Componentabout from './Componentabout';
 import Componentcontect from './Componentcontect';
 import Componentcertification from './Componentcertification';
+import Componentheader from './Componentheader';
 const Componentnav = () => {
     return (
         <div>
           <BrowserRouter>
+          <Componentheader/>
           <Routes>
             <Route path='/' element={<Compoenthome/>}/>
             <Route path='/project' element={<Componentprojects/>}/>
