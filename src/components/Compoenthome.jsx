@@ -7,7 +7,10 @@ import Componentabout2 from '../components2/Componentabout2';
 import Componentcontect2 from '../components2/Componentcontect2';
 const Compoenthome = () => {
   const [img,setimage]=useState("shan.pdf")
-  const [data,setdata]=useState("")
+  const [btndata,setdata]=useState("none")
+  const [btndata2,setdata2]=useState("none")
+  const [btndata3,setdata3]=useState("none")
+  const [btndata4,setdata4]=useState("none")
 
   function dowloading() {
     fetch(img).then((res)=>res.blob()).then((blobs)=>{
@@ -96,15 +99,27 @@ useEffect(()=>{
   setTimeout(() => {
     FULLSTACK.innerText=""
     FRONTEND.innerText="FRONEND DEVELOPER"
-  },5000);
+  },4500);
   setTimeout(() => {
     FRONTEND.innerText=""
     REACT.innerText="REACT DEVELOPER"
-  },7000);
+  },6000);
   setTimeout(() => {
    REACT.innerText=""
    MERN.innerText="MERN STACK DEVELOPER "
-  },9000);
+  },7500);
+  setTimeout(() => {
+   setdata("inline")
+   },8000);
+   setTimeout(() => {
+    setdata2("inline")
+   },8300);
+   setTimeout(() => {
+    setdata3("inline")
+   },9000);
+   setTimeout(() => {
+    setdata4("inline")
+   },9500);
 },[])
 
 
@@ -125,7 +140,8 @@ useEffect(()=>{
 </div>
 <div className=' infodvi col-lg-6'>
   <h5>
-  Hello,I'm
+  <span id='hello'></span>
+ 
    </h5>
   <h1><span id='firstname'></span>
   <span id='sname'></span>
@@ -153,12 +169,12 @@ useEffect(()=>{
   
   </h3>
   <div className='buttondiv'>
-  <button className='demobtns' onClick={dowloading}> Download CV</button>
-  <button className='demobtns'> <Link to={"/contect"} className='demobtnslink' >Contect Info</Link></button>
+  <button className={`demobtns d-${btndata}`} onClick={dowloading}> Download CV</button>
+  <button className={`demobtns d-${btndata2}`}> <Link to={"/contect"} className='demobtnslink' >Contect Info</Link></button>
   </div>
   <div className='linkdiv'>
-  <a href='https://linkedin.com/in/shan369'  target='_blank' className=' sizefont1'><i className="fa-brands fa-linkedin"></i></a>
-  <a href='https://github.com/Shanmugamsham'  target='_blank' className=' sizefont'><i className="fa-brands fa-github "></i></a>
+  <a href='https://linkedin.com/in/shan369'  target='_blank' className={` sizefont1 d-${btndata3}` }><i className="fa-brands fa-linkedin"></i></a>
+  <a href='https://github.com/Shanmugamsham'  target='_blank' className={` sizefont1 d-${btndata4}` }><i className="fa-brands fa-github "></i></a>
   
   
     
